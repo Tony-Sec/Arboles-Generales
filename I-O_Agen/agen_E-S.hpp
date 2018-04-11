@@ -129,7 +129,7 @@ void imprimirDescendientes(typename Agen<T>::nodo n, const Agen<T>& A)
    }
 }
 
-template <typename T>
+template <typename T> 
 void imprimirAgen(ostream& os, const Agen<T>& A, const T& fin)
 // Post: Inserta en el flujo de salida os los nodos de A en preorden,
 //       precedidos del elemento especial usado para denotar un nodo nulo.
