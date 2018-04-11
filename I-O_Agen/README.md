@@ -8,7 +8,7 @@ Esta carpeta contiene:
   * **agen.dat**  
       Archivo que guarda el Árbol General.  
       
-Ejemplo del Árbol guardado en *abin.dat*:      
+Ejemplo del Árbol guardado en *agen.dat*:      
 ![Abin](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
 
 //Árbol General en preorden tomando como fin #
