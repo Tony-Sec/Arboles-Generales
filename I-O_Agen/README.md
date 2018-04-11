@@ -3,13 +3,13 @@
 
 Esta carpeta contiene:  
   * **main.cpp**  
-      Ejemplo de como utilizar la Biblioteca *`I_O_Agen.hpp`* contienen:  
+      Ejemplo de como utilizar la Biblioteca *`I_O_Agen.hpp`*.    
         
   * **agen.dat**  
       Archivo que guarda el Árbol General.  
       
 Ejemplo del Árbol guardado en *agen.dat*:      
-![Abin](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
+![Agen](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
 
 //Árbol General en preorden tomando como fin #
 #
