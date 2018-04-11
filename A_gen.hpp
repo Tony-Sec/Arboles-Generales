@@ -1,9 +1,9 @@
-#ifndef AGEN_H
-#define AGEN_H
+#ifndef AGEN_HPP
+#define AGEN_HPP
 #include <cassert>
 
 template <typename T> class Agen {
-	struct celda; // declaraciÛn adelantada privada
+	struct celda; // declaraci√≥n adelantada privada
 	public:
 		typedef celda* nodo;
 		static const nodo NODO_NULO;
@@ -22,7 +22,7 @@ template <typename T> class Agen {
 		nodo hijoIzqdo(nodo n) const;
 		nodo hermDrcho(nodo n) const;
 		Agen(const Agen<T>& a); // ctor. de copia
-		Agen<T>& operator =(const Agen<T>& a); // asignaciÛn de ·rboles
+		Agen<T>& operator =(const Agen<T>& a); // asignaci√≥n de √°rboles
 		~Agen(); // destructo
 	private:
 		struct celda {
@@ -31,11 +31,11 @@ template <typename T> class Agen {
 			celda(const T& e, nodo p = NODO_NULO): elto(e),
 			padre(p), hizq(NODO_NULO), heder(NODO_NULO) {}
 		};
-		nodo r; // nodo raÌz del ·rbol
+		nodo r; // nodo ra√≠z del √°rbol
 		void destruirNodos(nodo& n);
 		nodo copiar(nodo n);
 };
-/* DefiniciÛn del nodo nulo */
+/* Definici√≥n del nodo nulo */
 template <typename T>
 const typename Agen<T>::nodo Agen<T>::NODO_NULO(0);
 
@@ -45,7 +45,7 @@ inline Agen<T>::Agen() : r(NODO_NULO) {}
 template <typename T>
 inline void Agen<T>::crearRaiz(const T& e)
 {
-	assert(r == NODO_NULO); // ·rbol vacÌo
+	assert(r == NODO_NULO); // √°rbol vac√≠o
 	r = new celda(e);
 }
 
@@ -64,7 +64,7 @@ template <typename T>
 inline void Agen<T>::insertarHermDrcho (Agen<T>::nodo n, const T& e) 
 {
 	assert(n != NODO_NULO);
-	assert(n != r); // n no es la raÌz
+	assert(n != r); // n no es la ra√≠z
 	nodo hedrcho = n->heder;
 	n->heder = new celda(e, n->padre);
 	// El actual hermano drcho. se convierte en
@@ -100,8 +100,8 @@ inline void Agen<T>::eliminarHermDrcho(Agen<T>::nodo n)
 template <typename T>
 inline void Agen<T>::eliminarRaiz()
 {
-	assert(r != NODO_NULO); // ·rbol no vacÌo
-	assert(r->hizq == NODO_NULO); // la raÌz es hoja
+	assert(r != NODO_NULO); // √°rbol no vac√≠o
+	assert(r->hizq == NODO_NULO); // la ra√≠z es hoja
 	delete(r);
 	r = NODO_NULO;
 }
@@ -162,8 +162,8 @@ Agen<T>::Agen(const Agen<T>& a)
 template <typename T>
 Agen<T>& Agen<T>::operator =(const Agen<T>& a)
 {
-	if (this != &a) { // evitar autoasignaciÛn
-		this->~Agen(); // vaciar el ·rbol
+	if (this != &a) { // evitar autoasignaci√≥n
+		this->~Agen(); // vaciar el √°rbol
 		r = copiar(a.r);
 	}
 	return *this;
@@ -172,10 +172,10 @@ Agen<T>& Agen<T>::operator =(const Agen<T>& a)
 template <typename T>
 inline Agen<T>::~Agen()
 {
-	destruirNodos(r); // vacÌa el ·rbol
+	destruirNodos(r); // vac√≠a el √°rbol
 }
 
-// MÈtodos privados
+// M√©todos privados
 
 // Destruye un nodo y todos sus descendientes
 template <typename T>
@@ -206,11 +206,11 @@ typename Agen<T>::nodo Agen<T>::copiar(Agen<T>::nodo n)
 	if (n != NODO_NULO) {
 		m = new celda(n->elto); // copiar n
 		if (n->hizq != NODO_NULO) { // n tiene descendientes
-			m->hizq = copiar(n->hizq); // copiar primer sub·rbol
+			m->hizq = copiar(n->hizq); // copiar primer sub√°rbol
 			m->hizq->padre = m;
-			// copiar el resto de sub·rboles
-			nodo hijo = m->hizq; // ˙ltimo sub·rbol copiado
-			nodo hedrcho = n->hizq->heder; // siguiente sub·rbola copiar
+			// copiar el resto de sub√°rboles
+			nodo hijo = m->hizq; // √∫ltimo sub√°rbol copiado
+			nodo hedrcho = n->hizq->heder; // siguiente sub√°rbola copiar
 			while (hedrcho != NODO_NULO) {
 				hijo = hijo->heder = copiar(hedrcho);
 				hijo->padre = m;
@@ -220,4 +220,4 @@ typename Agen<T>::nodo Agen<T>::copiar(Agen<T>::nodo n)
 	}
 	return m;
 }
-#endif // AGEN_H
+#endif // AGEN_HPP
