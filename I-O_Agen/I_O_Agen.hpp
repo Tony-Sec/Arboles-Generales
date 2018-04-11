@@ -1,5 +1,5 @@
-#ifndef AGEN_E_S_H
-#define AGEN_E_S_H
+#ifndef I_O_AGEN_HPP
+#define I_O_AGEN_HPP
 
 #include <cassert>
 #include <iostream>
@@ -157,4 +157,4 @@ void imprimirDescendientes(ostream& os, typename Agen<T>::nodo n, const Agen<T>&
    os << fin << ' ';
 }
 
-#endif   // AGEN_E_S_H
+#endif   // I_O_AGEN_HPP
