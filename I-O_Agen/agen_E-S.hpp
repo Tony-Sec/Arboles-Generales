@@ -13,9 +13,9 @@ using std::endl;
 
 template <typename T>
 void rellenarAgen(Agen<T>& A, const T& fin)
-// Pre: A est· vacÌo.
-// Post: Rellena el ·rbol A con la estructura y elementos
-//       leÌdos en preorden de la entrada est·ndar, usando
+// Pre: A est√° vac√≠o.
+// Post: Rellena el √°rbol A con la estructura y elementos
+//       le√≠dos en preorden de la entrada est√°ndar, usando
 //       fin como elemento especial para introducir nodos nulos.
 {
    T e;
@@ -31,7 +31,7 @@ void rellenarAgen(Agen<T>& A, const T& fin)
 template <typename T>
 void rellenarDescendientes(typename Agen<T>::nodo n, Agen<T>& A, const T& fin)
 // Pre: n es un nodo hoja de A.
-// Post: Lee de la entrada est·ndar y en preorden los descendientes de n,
+// Post: Lee de la entrada est√°ndar y en preorden los descendientes de n,
 //       usando fin para introducir nodos nulos.
 {
    T ehi, ehd;
@@ -60,9 +60,9 @@ void rellenarDescendientes(typename Agen<T>::nodo n, Agen<T>& A, const T& fin)
 
 template <typename T>
 void rellenarAgen(istream& is, Agen<T>& A)
-// Pre: A est· vacÌo.
+// Pre: A est√° vac√≠o.
 // Post: Extrae los nodos de A del flujo de entrada is,
-//       que contendr· el elemento especial que denota
+//       que contendr√° el elemento especial que denota
 //       un nodo nulo seguido de los elementos en preorden,
 //       incluyendo los correspondientes a nodos nulos.
 {
@@ -98,7 +98,7 @@ void rellenarDescendientes(istream& is, typename Agen<T>::nodo n, Agen<T>& A, co
 
 template <typename T>
 void imprimirAgen(const Agen<T>& A)
-// Post: Muestra los nodos de A en la salida est·ndar
+// Post: Muestra los nodos de A en la salida est√°ndar
 {
    if (!A.arbolVacio())
    {
@@ -112,7 +112,7 @@ void imprimirAgen(const Agen<T>& A)
 
 template <typename T>
 void imprimirDescendientes(typename Agen<T>::nodo n, const Agen<T>& A)
-// Post: Muestra los descendientes de n en la salida est·ndar.
+// Post: Muestra los descendientes de n en la salida est√°ndar.
 {
    if (A.hijoIzqdo(n) != Agen<T>::NODO_NULO)
    {
