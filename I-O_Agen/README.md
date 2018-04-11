@@ -3,7 +3,7 @@
 
 Esta carpeta contiene:  
   * **main.cpp**  
-      Ejemplo de como utilizar la Biblioteca *'I_O_Agen.hpp'* contienen:  
+      Ejemplo de como utilizar la Biblioteca *`I_O_Agen.hpp`* contienen:  
         
   * **agen.dat**  
       Archivo que guarda el Árbol General.  
