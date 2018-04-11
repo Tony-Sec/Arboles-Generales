@@ -12,5 +12,6 @@ Ejemplo del Árbol guardado en *agen.dat*:
 ![Agen](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
 
 //Árbol General en preorden tomando como fin #  
+  
 #
 a b d h # # i # # e # # c f # # g j # # k # #
