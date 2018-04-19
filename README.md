@@ -8,7 +8,7 @@
   Están divididos en Ejercicios basicos y avanzados.Buen código!!!!!
   ***************************************************************************************************************************
   
-Este repositorio contiene una serie de Bibliotecas en `C++` :
+Este repositorio contiene una Biblioteca en `C++` :
   
   * **Agen.hpp**  
       Biblioteca para representación en una estrucura dinámica mediante celdas enlazadas con punteros.  
