@@ -14,4 +14,4 @@ Ejemplo del Árbol guardado en *agen.dat*:
 //Árbol General en preorden tomando como fin #  
   
 #
-a b d h # # i # # e # # c f # # g j # # k # #
+a b e i # j # k # # f l # # # c g m # n # o # # # d h p # q # r # s # # # #
