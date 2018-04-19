@@ -9,22 +9,24 @@ const T_elem fin = '#';
 int main ()
 {
     Agen<T_elem> A, B;
-
-    /*cout << "Introducir A_gen --> agen.dat" << endl;
+    
+    /*************************************************Guardar Arbol Generalen agen.dat***************************************/
+    cout << "Introducir Agen --> agen.dat" << endl;
     rellenarAgen(A, fin);       // Desde std::cin
     ofstream fs("agen.dat");    // Abrir fichero de salida.
     imprimirAgen(fs, A, fin);   // En fichero.
     fs.close();
     cout << "\n*** Árbol general guardado en fichero agen.dat ***\n";
-*/
-    cout <<"agen.dat --> Extraer A_gen"<<endl;
-    ifstream fe("agen.dat");    // Abrir fichero de entrada.
-    rellenarAgen(fe, B);        //Desde std::cout
+    
+    /*************************************************Leer Arbol Generalen agen.dat***************************************/
+    cout <<"agen.dat --> Extraer Agen"<<endl;
+    ifstream fe("agen.dat");     // Abrir fichero de entrada.
+    rellenarAgen(fe, B);        
     fe.close();
 
 
     cout << "\n*** Mostrar árbol B ***\n";
-    imprimirAgen(B); // En std::cout
+    imprimirAgen(B);            // En std::cout
 
     return 0;
 }
