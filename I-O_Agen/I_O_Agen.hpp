@@ -24,7 +24,7 @@ void rellenarAgen(Agen<T>& A, const T& fin)
    assert(A.arbolVacio());
    cout << "Raiz (Fin = " << fin << "): "; cin >> e;
    if (e != fin) {
-      A.insertarRaiz(e);
+      A.crearRaiz(e);
       rellenarDescendientes(A.raiz(), A, fin);
    }
 }
@@ -71,7 +71,7 @@ void rellenarAgen(istream& is, Agen<T>& A)
 
    assert(A.arbolVacio());
    if (is >> fin && is >> e && e != fin) {
-      A.insertarRaiz(e);
+      A.crearRaiz(e);
       rellenarDescendientes(is, A.raiz(), A, fin);
    }
 }
