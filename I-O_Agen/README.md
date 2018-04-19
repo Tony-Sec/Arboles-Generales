@@ -9,7 +9,7 @@ Esta carpeta contiene:
       Archivo que guarda el Árbol General.  
       
 Ejemplo del Árbol guardado en *agen.dat*:      
-![Agen](http://img.fenixzone.net/i/lmTtJ8j.jpeg)
+![Agen](http://img.fenixzone.net/i/8BkuSJy.jpeg)
 
 //Árbol General en preorden tomando como fin #  
   
