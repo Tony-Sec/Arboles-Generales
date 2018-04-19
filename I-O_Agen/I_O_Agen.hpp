@@ -4,7 +4,7 @@
 #include <cassert>
 #include <iostream>
 #include <fstream>
-#include <../Agen.hpp>
+#include "../Agen.hpp"
 
 using std::istream;
 using std::ostream;
