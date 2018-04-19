@@ -4,7 +4,7 @@
   ***************************************************************************************************************************
   Bienvenido !!!!!!!
   
-  Para seguir esta guía[en construcción] he subido a este repositorio algunos ejercicios frecuentes que usan Árboles Binarios.
+  Para seguir esta guía[en construcción] he subido a este repositorio algunos ejercicios frecuentes que usan Árboles Generales.
   Están divididos en Ejercicios basicos y avanzados.Buen código!!!!!
   ***************************************************************************************************************************
   
