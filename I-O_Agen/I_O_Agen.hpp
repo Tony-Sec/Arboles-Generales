@@ -4,7 +4,7 @@
 #include <cassert>
 #include <iostream>
 #include <fstream>
-#include <../A_gen.hpp>
+#include <../Agen.hpp>
 
 using std::istream;
 using std::ostream;
