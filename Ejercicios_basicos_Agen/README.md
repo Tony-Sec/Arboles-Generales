@@ -7,10 +7,10 @@ Esta carpeta contiene una Bibliotecas con los siguientes ejercicios:
     
       Biblioteca que contiene las funciones necesarias para resolver los siguientes problemas:  
       * Calcular el **grado**(el numero máximo de hijos que puede tener un nodo en el Árbol).  
-      <!-- Esto es un comentario
+      Esto es un comentario
       * Calcular **la profundidad de nodo**.  
       * Calcular el **nivel de desequilibrio** (la diferencia entre las alturas de los subárboles).  
-      * **Podar** a partir de un nodo.   -->
+      * **Podar** a partir de un nodo.  
   * *`main.cpp`*  
       Ejemplo de uso de la anterior Biblioteca.  
         
