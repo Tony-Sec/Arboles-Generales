@@ -11,6 +11,7 @@ Esta carpeta contiene una Bibliotecas con los siguientes ejercicios:
       * Calcular **la profundidad de nodo**.  
       * Calcular el **nivel de desequilibrio** (la diferencia entre las alturas de los subárboles).  
       * **Podar** a partir de un nodo.  
+      *Nota:* No hay elementos repetidos.  
   * *`main.cpp`*  
       Ejemplo de uso de la anterior Biblioteca.  
         
